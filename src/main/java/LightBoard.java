@@ -31,7 +31,7 @@ public class LightBoard
     if(lights[row][col] == true){
       int count = 0;
       for(int x = 0; x < lights.length;x++){
-        if(lights[row][x] == true)
+        if(lights[row-1][x] == true)
           count++;
       }
       if(count%2 == 0)
@@ -40,7 +40,7 @@ public class LightBoard
     else if(lights[row][col] == false){
       int b = 0;
       for(int x = 0; x < lights.length; x++){
-        if(lights[row][x] == true)
+        if(lights[row-1][x] == true)
           b++;
       }
         if(b%3 == 0)
