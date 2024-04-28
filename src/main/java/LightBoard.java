@@ -38,11 +38,11 @@ public class LightBoard
         return false;
     }
     else{
-      int count = 0;
+      int b = 0;
       for(int x = 0; x < lights[x].length; x++){
         if(lights[row][x] == true)
-          count++;
-        if(count%3 == 0)
+          b++;
+        if(b%3 == 0)
           return true;
       }
     }
