@@ -37,14 +37,15 @@ public class LightBoard
       if(count%2 == 0)
         return false;
     }
-    else{
+    else if(lights[row][col] == false){
       int b = 0;
-      for(int x = 0; x < lights[x].length; x++){
+      for(int x = 0; x < lights[row].length; x++){
         if(lights[row][x] == true)
           b++;
+      }
         if(b%3 == 0)
           return true;
-      }
+      
     }
       return lights[row][col];
    
