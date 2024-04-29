@@ -30,7 +30,7 @@ public class LightBoard
   {
    int count = 0;
     for(int x  = 0; x < lights.length; x++)
-        if(lights[row][x] == true;
+        if(lights[row][x] == true)
     count++;
 
     if(lights[row][col] == true && count % 2 == 0)
